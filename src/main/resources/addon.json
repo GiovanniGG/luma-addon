@@ -1,0 +1,8 @@
+{
+  "uuid": "%uuid%",
+  "name": "Luma",
+  "mainClass": "de.giovanni.luma.Luma",
+  "description": "HGW Hologramme und Nachrichen f\u00fcr Velociraptor",
+  "author": "GiovanniGG",
+  "icon": ""
+}
