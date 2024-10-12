@@ -1,6 +1,7 @@
 package de.giovanni.luma;
 
 import de.byteandbit.velociraptor.api.VelociraptorAPI;
+import de.giovanni.luma.cmds.CmdListener;
 import de.giovanni.luma.features.HGWFeature;
 import de.giovanni.luma.helper.HoloQueue;
 import de.giovanni.luma.settings.Settings;
@@ -29,6 +30,8 @@ public class Luma extends LabyModAddon {
         settings = new Settings();
 
         holoQueue = new HoloQueue();
+
+        this.api.getEventManager().register(new CmdListener());
 
         VeloLoader.load(() -> {
             VelociraptorAPI.EVENT_BUS.register(new HGWFeature());
